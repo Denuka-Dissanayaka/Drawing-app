@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background: #313131;
+}
+
+#myCanvas {
+    background: #fff;
+}
+
+.field {
+    width: 800px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+}
+
+.color-field {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.tools .btn {
+    width: 100px;
+    height: 40px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background: #222;
+    font-weight: bold;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.tools {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pen-range {
+    margin-left: 5px;
+}
+
+.field p {
+    position: relative;
+    top: 100px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgb(146, 140, 140);
+}

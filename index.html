@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing-app</title>
+</head>
+
+<body>
+    <div class="field">
+        <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000000;">
+        </canvas>
+
+        <div class="tools">
+            <button onclick="undo()" type="button" class="btn">Undo</button>
+            <button onclick="clearCanvas()" type="button" class="btn">Clear</button>
+
+            <div class="color-field" style="background: red;" id="red"></div>
+            <div class="color-field" style="background: blue;" id="blue"></div>
+            <div class="color-field" style="background: green;" id="green"></div>
+            <div class="color-field" style="background: yellow;" id="yellow"></div>
+
+            <input type="color" class="color-picker">
+            <input type="range" min="1" max="100" class="pen-range">
+        </div>
+        <p>@ Denuka-Dissanayake</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
